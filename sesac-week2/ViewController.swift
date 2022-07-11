@@ -9,9 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var pinkView: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        // TODO: clipsToBounds vs cornerRadius vs Shadow 조사 및 실험
+        pinkView.layer.maskedCorners = [.layerMinXMinYCorner]
+        
     }
 
 

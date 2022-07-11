@@ -217,21 +217,21 @@
                                 <state key="normal" image="list.bullet" catalog="system"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dqI-Xi-akS">
-                                <rect key="frame" x="50" y="269" width="314" height="358"/>
+                                <rect key="frame" x="41.5" y="257.5" width="331" height="381"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7iB-Rk-Olh">
-                                        <rect key="frame" x="0.0" y="0.0" width="314" height="106"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="113.5"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="RV2-6a-Qew">
-                                                <rect key="frame" x="0.0" y="0.0" width="91.5" height="106"/>
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="RV2-6a-Qew">
+                                                <rect key="frame" x="0.0" y="0.0" width="97" height="113.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a5f-Bi-uCl">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91.5" height="83"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="89.5"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="sesac_slime1"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="행복해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2c2-wZ-Gra">
-                                                        <rect key="frame" x="0.0" y="88" width="91.5" height="18"/>
+                                                        <rect key="frame" x="0.0" y="94.5" width="97" height="19"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -242,15 +242,15 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Hro-zH-PFq">
-                                                <rect key="frame" x="111.5" y="0.0" width="91" height="106"/>
+                                                <rect key="frame" x="117" y="0.0" width="97" height="113.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNM-wL-NCh">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="83"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="89.5"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="sesac_slime2"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="행복해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahc-FV-Vcb">
-                                                        <rect key="frame" x="0.0" y="88" width="91" height="18"/>
+                                                        <rect key="frame" x="0.0" y="94.5" width="97" height="19"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -261,15 +261,15 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="P6h-Oa-ZRQ">
-                                                <rect key="frame" x="222.5" y="0.0" width="91.5" height="106"/>
+                                                <rect key="frame" x="234" y="0.0" width="97" height="113.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKA-zW-qst">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91.5" height="83"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="89.5"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="sesac_slime3"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="행복해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9R-40-rvc">
-                                                        <rect key="frame" x="0.0" y="88" width="91.5" height="18"/>
+                                                        <rect key="frame" x="0.0" y="94.5" width="97" height="19"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -282,18 +282,18 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Fqv-QH-ash">
-                                        <rect key="frame" x="0.0" y="126" width="314" height="106"/>
+                                        <rect key="frame" x="0.0" y="133.5" width="331" height="114"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="0fC-1a-TnM">
-                                                <rect key="frame" x="0.0" y="0.0" width="91.5" height="106"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="97" height="114"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFo-gs-RR2">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91.5" height="83"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="89.5"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="sesac_slime4"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="행복해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yr-kY-Xhh">
-                                                        <rect key="frame" x="0.0" y="88" width="91.5" height="18"/>
+                                                        <rect key="frame" x="0.0" y="94.5" width="97" height="19.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -304,15 +304,15 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jQh-Ym-fdD">
-                                                <rect key="frame" x="111.5" y="0.0" width="91" height="106"/>
+                                                <rect key="frame" x="117" y="0.0" width="97" height="114"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAN-do-kQu">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="83"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="89.5"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="sesac_slime5"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="행복해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUc-2a-TPu">
-                                                        <rect key="frame" x="0.0" y="88" width="91" height="18"/>
+                                                        <rect key="frame" x="0.0" y="94.5" width="97" height="19.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -323,15 +323,15 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="RLM-V2-FdM">
-                                                <rect key="frame" x="222.5" y="0.0" width="91.5" height="106"/>
+                                                <rect key="frame" x="234" y="0.0" width="97" height="114"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BV3-hb-4Tp">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91.5" height="83"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="89.5"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="sesac_slime6"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="행복해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ee-jd-55o">
-                                                        <rect key="frame" x="0.0" y="88" width="91.5" height="18"/>
+                                                        <rect key="frame" x="0.0" y="94.5" width="97" height="19.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -344,18 +344,18 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Hth-wW-36Q">
-                                        <rect key="frame" x="0.0" y="252" width="314" height="106"/>
+                                        <rect key="frame" x="0.0" y="267.5" width="331" height="113.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Cw0-I5-sjr">
-                                                <rect key="frame" x="0.0" y="0.0" width="91.5" height="106"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="97" height="113.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Wd-uF-Nrx">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91.5" height="83"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="89"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="sesac_slime7"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="행복해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFe-D8-sr1">
-                                                        <rect key="frame" x="0.0" y="88" width="91.5" height="18"/>
+                                                        <rect key="frame" x="0.0" y="94" width="97" height="19.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -366,15 +366,15 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ASl-dH-dCg">
-                                                <rect key="frame" x="111.5" y="0.0" width="91" height="106"/>
+                                                <rect key="frame" x="117" y="0.0" width="97" height="113.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNK-t0-8MG">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="83"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="89"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="sesac_slime8"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="행복해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pQ-PV-a0U">
-                                                        <rect key="frame" x="0.0" y="88" width="91" height="18"/>
+                                                        <rect key="frame" x="0.0" y="94" width="97" height="19.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -385,15 +385,15 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="0gy-5H-3wg">
-                                                <rect key="frame" x="222.5" y="0.0" width="91.5" height="106"/>
+                                                <rect key="frame" x="234" y="0.0" width="97" height="113.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zry-CY-t45">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91.5" height="83"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="89"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="sesac_slime9"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="행복해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7I-Rt-Ib5">
-                                                        <rect key="frame" x="0.0" y="88" width="91.5" height="18"/>
+                                                        <rect key="frame" x="0.0" y="94" width="97" height="19.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -406,6 +406,9 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dqI-Xi-akS" secondAttribute="height" multiplier="1:1.15" id="QGa-LB-oBo"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="W3C-fO-gkw"/>
@@ -415,11 +418,9 @@
                             <constraint firstItem="dQD-aC-N4r" firstAttribute="centerX" secondItem="wF1-Dc-eHu" secondAttribute="centerX" id="DNP-As-644"/>
                             <constraint firstItem="dQD-aC-N4r" firstAttribute="centerY" secondItem="wF1-Dc-eHu" secondAttribute="centerY" multiplier="0.15" id="RqL-EF-49A"/>
                             <constraint firstItem="SIk-lf-Lg5" firstAttribute="centerX" secondItem="wF1-Dc-eHu" secondAttribute="centerX" multiplier="0.2" id="bDh-9D-T9K"/>
+                            <constraint firstItem="dqI-Xi-akS" firstAttribute="width" secondItem="wF1-Dc-eHu" secondAttribute="width" multiplier="0.8" id="cfT-ho-Nz2"/>
                             <constraint firstItem="dqI-Xi-akS" firstAttribute="centerX" secondItem="wF1-Dc-eHu" secondAttribute="centerX" id="cmM-A6-5Lh"/>
-                            <constraint firstItem="dqI-Xi-akS" firstAttribute="height" secondItem="wF1-Dc-eHu" secondAttribute="height" multiplier="0.4" id="da1-GT-oUj"/>
-                            <constraint firstItem="dqI-Xi-akS" firstAttribute="leading" secondItem="W3C-fO-gkw" secondAttribute="leading" constant="50" id="gcX-9c-ncA"/>
                             <constraint firstItem="SIk-lf-Lg5" firstAttribute="centerY" secondItem="wF1-Dc-eHu" secondAttribute="centerY" multiplier="0.15" id="ooJ-xu-BYe"/>
-                            <constraint firstItem="W3C-fO-gkw" firstAttribute="trailing" secondItem="dqI-Xi-akS" secondAttribute="trailing" constant="50" id="sXO-BW-70C"/>
                         </constraints>
                     </view>
                 </viewController>

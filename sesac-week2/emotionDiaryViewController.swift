@@ -7,6 +7,10 @@
 
 import UIKit
 
+
+// 해당 코드를 통해서 원하는 UI적 결과물이 나오려면 다음이 명확해야한다는 한계점이 있다.
+//  한계점: outlet collections(buttons, labels)의 순서와 emotionList의 순서는 의도한 대로 일치해야한다.
+//  배열(outlet collection 포함)이 순서를 가진 자료형이라는 특성을 사용하였다.
 class emotionDiaryViewController: UIViewController {
 
     @IBOutlet var emotionButtons: [UIButton]!

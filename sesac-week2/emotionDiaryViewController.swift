@@ -20,7 +20,7 @@ class emotionDiaryViewController: UIViewController {
     
     @IBOutlet var emotionLabels: [UILabel]!
     
-    let emotionList = ["만족해", "기뻐", "사랑해", "화나", "그냥그래", "피곤해", "긴장돼", "짜증나", "억울해"]
+    let emotionList = ["만족해", "기뻐", "사랑해", "화나", "그냥그래", "피곤해", "긴장돼", "짜증나", "슬퍼"]
     var emotionDic: [String:Int] = [:]
     
     override func viewDidLoad() {

@@ -20,7 +20,6 @@ class emotionDiaryViewController: UIViewController {
     
     @IBOutlet var emotionLabels: [UILabel]!
     
-    
     let emotionList = ["만족해", "기뻐", "사랑해", "화나", "그냥그래", "피곤해", "긴장돼", "짜증나", "슬퍼"]
     var emotionDic: [String:Int] = [:]
     
@@ -41,7 +40,7 @@ class emotionDiaryViewController: UIViewController {
         }
     }
     func setTitleButtons(_ buttons: [UIButton]) {
-        guard (buttons.count == emotionList.count) else { return }
+        guard (buttons.count == emotionList.count) else { print("button 갯수와 emotionList 갯수 불일치"); return }
         
         var idx = 0
         for button in buttons {
@@ -76,7 +75,9 @@ class emotionDiaryViewController: UIViewController {
     @IBAction func emotionButtonClicked(_ sender: UIButton) {
         guard let buttonEmotion = sender.currentTitle else { return }
         
-        emotionDic[buttonEmotion]! += 1
+        if emotionDic[buttonEmotion] != nil {
+            emotionDic[buttonEmotion]! += 1
+        }
         setLabels(emotionLabels)
     }
 }

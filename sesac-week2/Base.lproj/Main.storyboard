@@ -194,7 +194,6 @@
         <!--Emotion Diary View Controller-->
         <scene sceneID="v6G-w3-lNY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hjS-vE-1VF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="Aeg-DD-3Gl" customClass="emotionDiaryViewController" customModule="sesac_week2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wF1-Dc-eHu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -472,8 +471,47 @@
                         <outletCollection property="emotionLabels" destination="p7I-Rt-Ib5" collectionClass="NSMutableArray" id="0hR-i8-RwA"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hjS-vE-1VF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1176.8115942028987" y="1783.9285714285713"/>
+            <point key="canvasLocation" x="1177" y="1791"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KbB-zr-Wqp">
+            <objects>
+                <viewController id="dbr-aC-qm4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wFM-Y0-45l">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="안녕하세요 안녕하세요 안녕하세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ect-4h-abH">
+                                <rect key="frame" x="20" y="54" width="124.5" height="21"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="안녕하세요 안녕하세요 안녕하세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nq5-hC-2Nr">
+                                <rect key="frame" x="164.5" y="54" width="229.5" height="21"/>
+                                <color key="backgroundColor" red="0.37253540750000003" green="0.74510246520000001" blue="0.73333185909999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UDE-eq-D82"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Nq5-hC-2Nr" firstAttribute="leading" secondItem="ect-4h-abH" secondAttribute="trailing" constant="20" id="3Pa-O5-ZJY"/>
+                            <constraint firstItem="ect-4h-abH" firstAttribute="leading" secondItem="UDE-eq-D82" secondAttribute="leading" constant="20" id="3hO-nU-O3I"/>
+                            <constraint firstItem="ect-4h-abH" firstAttribute="top" secondItem="UDE-eq-D82" secondAttribute="top" constant="10" id="VAC-FD-Dzt"/>
+                            <constraint firstItem="UDE-eq-D82" firstAttribute="trailing" secondItem="Nq5-hC-2Nr" secondAttribute="trailing" constant="20" id="haC-fq-XTP"/>
+                            <constraint firstItem="Nq5-hC-2Nr" firstAttribute="top" secondItem="UDE-eq-D82" secondAttribute="top" constant="10" id="m2U-UJ-OTh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PW4-XU-dYw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1177" y="2485"/>
         </scene>
         <!--세번쨰-->
         <scene sceneID="WWH-Wf-sHc">

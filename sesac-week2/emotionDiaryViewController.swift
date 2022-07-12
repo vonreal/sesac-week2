@@ -40,7 +40,7 @@ class emotionDiaryViewController: UIViewController {
         }
     }
     func setTitleButtons(_ buttons: [UIButton]) {
-        guard (buttons.count == emotionList.count) else { print("button 갯수와 emotionList 갯수 불일치"); return }
+        guard (buttons.count == emotionList.count) else { return }
         
         var idx = 0
         for button in buttons {

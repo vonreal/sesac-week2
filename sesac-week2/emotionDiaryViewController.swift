@@ -12,7 +12,7 @@ class emotionDiaryViewController: UIViewController {
     @IBOutlet var emotionButtons: [UIButton]!
     @IBOutlet var emotionLabels: [UILabel]!
     
-    var emotionDic: [UIButton:(UILabel, emotion: String, emotionCnt: Int)] = [:]
+    lazy var emotionDic: [UIButton:(UILabel, emotion: String, emotionCnt: Int)] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()

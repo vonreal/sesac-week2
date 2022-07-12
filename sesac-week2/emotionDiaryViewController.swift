@@ -20,7 +20,7 @@ class emotionDiaryViewController: UIViewController {
     
     @IBOutlet var emotionLabels: [UILabel]!
     
-    let emotionList = ["만족해", "기뻐", "사랑해", "화나", "그냥그래", "피곤해", "긴장돼", "짜증나", "슬퍼"]
+    let emotionList = ["만족해", "기뻐", "사랑해", "화나", "그냥그래", "피곤해", "긴장돼", "짜증나", "억울해"]
     var emotionDic: [String:Int] = [:]
     
     override func viewDidLoad() {
@@ -40,7 +40,7 @@ class emotionDiaryViewController: UIViewController {
         }
     }
     func setTitleButtons(_ buttons: [UIButton]) {
-        guard (buttons.count == emotionList.count) else { return }
+        guard (buttons.count == emotionList.count) else { print("[에러] button 갯수와 emotionList 갯수를 맞춰주세요."); return }
         
         var idx = 0
         for button in buttons {
@@ -51,7 +51,7 @@ class emotionDiaryViewController: UIViewController {
     
     // [CODE - Init and change values]
     func setLabels(_ labels: [UILabel]) {
-        guard (labels.count == emotionList.count) else { return }
+        guard (labels.count == emotionList.count) else { print("[에러] label 갯수와 emotionList 갯수를 맞춰주세요."); return }
         
         var idx = 0
         for label in labels {
@@ -73,11 +73,10 @@ class emotionDiaryViewController: UIViewController {
     
     
     @IBAction func emotionButtonClicked(_ sender: UIButton) {
-        guard let buttonEmotion = sender.currentTitle else { return }
+        guard let buttonEmotion = sender.currentTitle else { print("[에러] button의 title이 없습니다."); return }
+        guard emotionDic[buttonEmotion] != nil else { print("[에러] emotionDic의 \(buttonEmotion)의 값이 nil입니다."); return }
         
-        if emotionDic[buttonEmotion] != nil {
-            emotionDic[buttonEmotion]! += 1
-        }
+        emotionDic[buttonEmotion]! += 1
         setLabels(emotionLabels)
     }
 }

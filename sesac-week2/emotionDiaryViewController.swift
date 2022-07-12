@@ -26,10 +26,10 @@ class emotionDiaryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        designMain()
+        designUI()
         
         initEmotionDic()
-        setTitleButtons(emotionButtons)
+        setTitleAndTagButtons(emotionButtons)
         setLabels(emotionLabels)
     }
     
@@ -39,17 +39,19 @@ class emotionDiaryViewController: UIViewController {
             emotionDic[item] = 0
         }
     }
-    func setTitleButtons(_ buttons: [UIButton]) {
+    
+    // [CODE - Init and update values]
+    func setTitleAndTagButtons(_ buttons: [UIButton]) {
         guard (buttons.count == emotionList.count) else { print("[에러] button 갯수와 emotionList 갯수를 맞춰주세요."); return }
         
         var idx = 0
         for button in buttons {
             button.setTitle(emotionList[idx], for: .normal)
+            button.tag = idx
             idx += 1
         }
     }
     
-    // [CODE - Init and change values]
     func setLabels(_ labels: [UILabel]) {
         guard (labels.count == emotionList.count) else { print("[에러] label 갯수와 emotionList 갯수를 맞춰주세요."); return }
         
@@ -63,20 +65,24 @@ class emotionDiaryViewController: UIViewController {
         }
     }
     
+    func updateLabels(_ label: UILabel, emotion: String) {
+        let emotionCnt = String(emotionDic[emotion]!)
+        label.text = emotion + " " + emotionCnt
+    }
+    
+    // [CODE - Action]
+    @IBAction func emotionButtonClicked(_ sender: UIButton) {
+        guard let buttonEmotion = sender.currentTitle else { print("[에러] button의 title이 없습니다."); return }
+
+        emotionDic[buttonEmotion]! += 1
+        updateLabels(emotionLabels[sender.tag], emotion: buttonEmotion)
+    }
+    
     // [CODE - Design]
-    func designMain() {
+    func designUI() {
         designTitle()
     }
     func designTitle() {
         titleLabel.text = "감정 다이어리"
-    }
-    
-    
-    @IBAction func emotionButtonClicked(_ sender: UIButton) {
-        guard let buttonEmotion = sender.currentTitle else { print("[에러] button의 title이 없습니다."); return }
-        guard emotionDic[buttonEmotion] != nil else { print("[에러] emotionDic의 \(buttonEmotion)의 값이 nil입니다."); return }
-        
-        emotionDic[buttonEmotion]! += 1
-        setLabels(emotionLabels)
     }
 }

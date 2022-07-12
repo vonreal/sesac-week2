@@ -7,82 +7,67 @@
 
 import UIKit
 
-// 딕셔너리를 이용해서 key값은 감정의 이름을 담고 value값으로 감정을 클릭한 횟수를 가진다.
-// 버튼들에게는 Title이 딕셔너리의 key값으로 1:1 매칭되어있고 이 title을 바탕으로
-// 어떤 버튼을 눌렀는지 확인할 수 있다.
-// 그래서 그 버튼의 타이틀에 해당하는 value값의 인덱스를 증가시키고 라벨의 값을 다시 설정해주는 식으로 구현했다.
-
 class emotionDiaryViewController: UIViewController {
 
-    @IBOutlet weak var titleLabel: UILabel!
-    
     @IBOutlet var emotionButtons: [UIButton]!
-    
     @IBOutlet var emotionLabels: [UILabel]!
     
-    let emotionList = ["만족해", "기뻐", "사랑해", "화나", "그냥그래", "피곤해", "긴장돼", "짜증나", "슬퍼"]
-    var emotionDic: [String:Int] = [:]
+    var emotionDic: [UIButton:(UILabel, emotion: String, emotionCnt: Int)] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        designUI()
+        let emotionList = ["행복해", "좋아!", "사랑해", "화나!", "그냥그래", "졸려", "황당해", "별로야", "억울해"]
         
-        initEmotionDic()
-        setTitleAndTagButtons(emotionButtons)
-        setLabels(emotionLabels)
-    }
-    
-    // [CODE - Init values]
-    func initEmotionDic() {
-        for item in emotionList {
-            emotionDic[item] = 0
+        if validation(emotionList.count) != 0 {
+            setEmotionDic(emotionList)
+            setLabels(emotionList)
         }
     }
     
-    // [CODE - Init and update values]
-    func setTitleAndTagButtons(_ buttons: [UIButton]) {
-        guard (buttons.count == emotionList.count) else { print("[에러] button 갯수와 emotionList 갯수를 맞춰주세요."); return }
+    // [C언어 방식 활용] swift 형식의 에러 처리 확인하고 개선하기
+    // [CODE - 유효검사: 인덱스 오류 방지]
+    func validation(_ emotionListCnt: Int) -> Int {
+        let buttonCnt = emotionButtons.count
+        let labelCnt = emotionLabels.count
         
-        var idx = 0
-        for button in buttons {
-            button.setTitle(emotionList[idx], for: .normal)
-            button.tag = idx
-            idx += 1
+        if (buttonCnt != labelCnt || buttonCnt != emotionListCnt) {
+            print("갯수가 상이합니다. UI를 다시 한 번 확인해주세요.")
+            return 0
         }
+        return 1
     }
     
-    func setLabels(_ labels: [UILabel]) {
-        guard (labels.count == emotionList.count) else { print("[에러] label 갯수와 emotionList 갯수를 맞춰주세요."); return }
-        
+    // [CODE - 값 설정: 딕셔너리 초기값 설정]
+    func setEmotionDic(_ emotionList: [String]) {
         var idx = 0
-        for label in labels {
+        
+        for button in emotionButtons {
+            let label = emotionLabels[idx]
             let emotion = emotionList[idx]
-            if let emotionCnt = emotionDic[emotion] {
-                label.text = emotion + " " + String(emotionCnt)
-            }
+            
+            emotionDic[button] = (label, emotion, 0)
             idx += 1
         }
     }
     
-    func updateLabels(_ label: UILabel, emotion: String) {
-        let emotionCnt = String(emotionDic[emotion]!)
-        label.text = emotion + " " + emotionCnt
+    // [CODE - 값 설정: 라벨 초기값 설정]
+    func setLabels(_ emotionList: [String]) {
+        var idx = 0
+        
+        for label in emotionLabels {
+            label.text = emotionList[idx] + " 0"
+            idx += 1
+        }
     }
     
-    // [CODE - Action]
+    // [CODE - 액션: 버튼 클릭 시 클릭값 증가 및 레이블에 증가된 값 반영]
     @IBAction func emotionButtonClicked(_ sender: UIButton) {
-        guard let buttonEmotion = sender.currentTitle else { print("[에러] button의 title이 없습니다."); return }
+        guard let (label, emotion, emotionCnt) = emotionDic[sender] else { return }
 
-        emotionDic[buttonEmotion]! += 1
-        updateLabels(emotionLabels[sender.tag], emotion: buttonEmotion)
-    }
-    
-    // [CODE - Design]
-    func designUI() {
-        designTitle()
-    }
-    func designTitle() {
-        titleLabel.text = "감정 다이어리"
+        let clickCnt = emotionCnt + 1
+        
+        emotionDic[sender]!.emotionCnt = clickCnt
+        label.text = emotion + " " + String(clickCnt)
     }
 }

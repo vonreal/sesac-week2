@@ -14,6 +14,7 @@
 		7629CD15287BA3E70038B2C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7629CD14287BA3E70038B2C1 /* Assets.xcassets */; };
 		7629CD18287BA3E70038B2C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7629CD16287BA3E70038B2C1 /* LaunchScreen.storyboard */; };
 		76BF322D287BEDB500B4A763 /* emotionDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF322C287BEDB500B4A763 /* emotionDiaryViewController.swift */; };
+		76C1962A287D16AD009C52B0 /* sesac0712ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C19629287D16AD009C52B0 /* sesac0712ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		7629CD17287BA3E70038B2C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7629CD19287BA3E70038B2C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76BF322C287BEDB500B4A763 /* emotionDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emotionDiaryViewController.swift; sourceTree = "<group>"; };
+		76C19629287D16AD009C52B0 /* sesac0712ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sesac0712ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		7629CD0A287BA3E50038B2C1 /* sesac-week2 */ = {
 			isa = PBXGroup;
 			children = (
+				76C19629287D16AD009C52B0 /* sesac0712ViewController.swift */,
 				7629CD0B287BA3E50038B2C1 /* AppDelegate.swift */,
 				7629CD0D287BA3E50038B2C1 /* SceneDelegate.swift */,
 				7629CD0F287BA3E50038B2C1 /* ViewController.swift */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76BF322D287BEDB500B4A763 /* emotionDiaryViewController.swift in Sources */,
+				76C1962A287D16AD009C52B0 /* sesac0712ViewController.swift in Sources */,
 				7629CD10287BA3E50038B2C1 /* ViewController.swift in Sources */,
 				7629CD0C287BA3E50038B2C1 /* AppDelegate.swift in Sources */,
 				7629CD0E287BA3E50038B2C1 /* SceneDelegate.swift in Sources */,

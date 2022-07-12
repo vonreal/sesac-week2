@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="x5b-zu-Wxb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dbr-aC-qm4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -476,10 +476,10 @@
             </objects>
             <point key="canvasLocation" x="1177" y="1791"/>
         </scene>
-        <!--View Controller-->
+        <!--Sesac0712 View Controller-->
         <scene sceneID="KbB-zr-Wqp">
             <objects>
-                <viewController id="dbr-aC-qm4" sceneMemberID="viewController">
+                <viewController id="dbr-aC-qm4" customClass="sesac0712ViewController" customModule="sesac_week2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wFM-Y0-45l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -498,6 +498,31 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJE-Z2-hG8">
+                                <rect key="frame" x="186" y="437.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qb2-xd-fFx">
+                                <rect key="frame" x="186" y="673" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tEb-th-hDP">
+                                <rect key="frame" x="88" y="566" width="238" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="third"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentControlValueChanged:" destination="dbr-aC-qm4" eventType="valueChanged" id="YRd-ek-BfY"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UDE-eq-D82"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -506,22 +531,28 @@
                             <constraint firstItem="Nq5-hC-2Nr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ect-4h-abH" secondAttribute="trailing" constant="20" id="3Pa-O5-ZJY"/>
                             <constraint firstItem="ect-4h-abH" firstAttribute="leading" secondItem="UDE-eq-D82" secondAttribute="leading" constant="20" id="3hO-nU-O3I"/>
                             <constraint firstItem="ect-4h-abH" firstAttribute="top" secondItem="UDE-eq-D82" secondAttribute="top" constant="10" id="VAC-FD-Dzt"/>
+                            <constraint firstItem="HJE-Z2-hG8" firstAttribute="centerX" secondItem="wFM-Y0-45l" secondAttribute="centerX" id="c5T-it-DYm"/>
                             <constraint firstItem="UDE-eq-D82" firstAttribute="trailing" secondItem="Nq5-hC-2Nr" secondAttribute="trailing" constant="20" id="haC-fq-XTP"/>
                             <constraint firstItem="Nq5-hC-2Nr" firstAttribute="top" secondItem="UDE-eq-D82" secondAttribute="top" constant="10" id="m2U-UJ-OTh"/>
+                            <constraint firstItem="HJE-Z2-hG8" firstAttribute="centerY" secondItem="wFM-Y0-45l" secondAttribute="centerY" id="xOR-KS-oob"/>
                         </constraints>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="WhN-Wy-XdJ" appends="YES" id="GWp-dW-aB7"/>
+                            <outletCollection property="gestureRecognizers" destination="JNo-Wo-P0E" appends="YES" id="v0c-1n-B01"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="segmentControl" destination="tEb-th-hDP" id="sDn-9J-qRt"/>
+                        <outlet property="textLabel" destination="HJE-Z2-hG8" id="Rhw-9n-BI1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PW4-XU-dYw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="WhN-Wy-XdJ">
+                <tapGestureRecognizer id="JNo-Wo-P0E">
                     <connections>
-                        <action selector="tabClicked:" destination="dbr-aC-qm4" id="6I1-St-7eX"/>
+                        <action selector="tabClicked:" destination="dbr-aC-qm4" id="lMQ-f0-VdX"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1177" y="2485"/>
+            <point key="canvasLocation" x="1176.8115942028987" y="2484.375"/>
         </scene>
         <!--세번쨰-->
         <scene sceneID="WWH-Wf-sHc">

@@ -13,6 +13,7 @@
 		7629CD13287BA3E50038B2C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7629CD11287BA3E50038B2C1 /* Main.storyboard */; };
 		7629CD15287BA3E70038B2C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7629CD14287BA3E70038B2C1 /* Assets.xcassets */; };
 		7629CD18287BA3E70038B2C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7629CD16287BA3E70038B2C1 /* LaunchScreen.storyboard */; };
+		76726C70287F8E8D005D88EB /* AnniversaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76726C6F287F8E8D005D88EB /* AnniversaryViewController.swift */; };
 		76BF322D287BEDB500B4A763 /* emotionDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF322C287BEDB500B4A763 /* emotionDiaryViewController.swift */; };
 		76C1962A287D16AD009C52B0 /* sesac0712ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C19629287D16AD009C52B0 /* sesac0712ViewController.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		7629CD14287BA3E70038B2C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7629CD17287BA3E70038B2C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7629CD19287BA3E70038B2C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76726C6F287F8E8D005D88EB /* AnniversaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnniversaryViewController.swift; sourceTree = "<group>"; };
 		76BF322C287BEDB500B4A763 /* emotionDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emotionDiaryViewController.swift; sourceTree = "<group>"; };
 		76C19629287D16AD009C52B0 /* sesac0712ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sesac0712ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +71,7 @@
 				7629CD0D287BA3E50038B2C1 /* SceneDelegate.swift */,
 				7629CD0F287BA3E50038B2C1 /* ViewController.swift */,
 				7629CD11287BA3E50038B2C1 /* Main.storyboard */,
+				76726C6F287F8E8D005D88EB /* AnniversaryViewController.swift */,
 				76BF322C287BEDB500B4A763 /* emotionDiaryViewController.swift */,
 				7629CD14287BA3E70038B2C1 /* Assets.xcassets */,
 				7629CD16287BA3E70038B2C1 /* LaunchScreen.storyboard */,
@@ -151,6 +154,7 @@
 				76BF322D287BEDB500B4A763 /* emotionDiaryViewController.swift in Sources */,
 				76C1962A287D16AD009C52B0 /* sesac0712ViewController.swift in Sources */,
 				7629CD10287BA3E50038B2C1 /* ViewController.swift in Sources */,
+				76726C70287F8E8D005D88EB /* AnniversaryViewController.swift in Sources */,
 				7629CD0C287BA3E50038B2C1 /* AppDelegate.swift in Sources */,
 				7629CD0E287BA3E50038B2C1 /* SceneDelegate.swift in Sources */,
 			);

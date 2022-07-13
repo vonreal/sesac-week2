@@ -18,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76004EF2287EBDBB001BD12F /* sesac-0712.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "sesac-0712.playground"; sourceTree = "<group>"; };
+		76004EF3287EBDBB001BD12F /* sesac-0713.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "sesac-0713.playground"; sourceTree = "<group>"; };
 		7629CD08287BA3E50038B2C1 /* sesac-week2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sesac-week2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7629CD0B287BA3E50038B2C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7629CD0D287BA3E50038B2C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +46,8 @@
 		7629CCFF287BA3E50038B2C1 = {
 			isa = PBXGroup;
 			children = (
+				76004EF2287EBDBB001BD12F /* sesac-0712.playground */,
+				76004EF3287EBDBB001BD12F /* sesac-0713.playground */,
 				7629CD0A287BA3E50038B2C1 /* sesac-week2 */,
 				7629CD09287BA3E50038B2C1 /* Products */,
 			);

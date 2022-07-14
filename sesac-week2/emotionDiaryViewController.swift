@@ -74,4 +74,6 @@ class emotionDiaryViewController: UIViewController {
         emotionDic[sender]!.emotionCnt = clickCnt
         label.text = emotion + " " + String(clickCnt)
     }
+    
+    
 }

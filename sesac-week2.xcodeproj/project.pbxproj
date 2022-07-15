@@ -20,6 +20,9 @@
 		76726C77287FAEE3005D88EB /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 76726C76287FAEE3005D88EB /* SideMenu */; };
 		76726C7A287FAF55005D88EB /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 76726C79287FAF55005D88EB /* FSCalendar */; };
 		76726C7D287FAFBA005D88EB /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = 76726C7C287FAFBA005D88EB /* TextFieldEffects */; };
+		76A0CD0E2880E8370065E145 /* TransitonStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76A0CD0D2880E8370065E145 /* TransitonStoryboard.storyboard */; };
+		76A0CD102880EFC50065E145 /* TransitionFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0CD0F2880EFC50065E145 /* TransitionFirstViewController.swift */; };
+		76A0CD122880FE030065E145 /* TransitionSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A0CD112880FE030065E145 /* TransitionSecondViewController.swift */; };
 		76BF322D287BEDB500B4A763 /* emotionDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BF322C287BEDB500B4A763 /* emotionDiaryViewController.swift */; };
 		76C1962A287D16AD009C52B0 /* sesac0712ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C19629287D16AD009C52B0 /* sesac0712ViewController.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +41,9 @@
 		76726C6F287F8E8D005D88EB /* AnniversaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnniversaryViewController.swift; sourceTree = "<group>"; };
 		76726C71287FA68E005D88EB /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		76726C73287FA806005D88EB /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		76A0CD0D2880E8370065E145 /* TransitonStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransitonStoryboard.storyboard; sourceTree = "<group>"; };
+		76A0CD0F2880EFC50065E145 /* TransitionFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionFirstViewController.swift; sourceTree = "<group>"; };
+		76A0CD112880FE030065E145 /* TransitionSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionSecondViewController.swift; sourceTree = "<group>"; };
 		76BF322C287BEDB500B4A763 /* emotionDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emotionDiaryViewController.swift; sourceTree = "<group>"; };
 		76C19629287D16AD009C52B0 /* sesac0712ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sesac0712ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +68,7 @@
 			children = (
 				76004EF2287EBDBB001BD12F /* sesac-0712.playground */,
 				76004EF3287EBDBB001BD12F /* sesac-0713.playground */,
+				76A0CD0C2880E81D0065E145 /* Transition */,
 				7629CD0A287BA3E50038B2C1 /* sesac-week2 */,
 				7629CD09287BA3E50038B2C1 /* Products */,
 			);
@@ -92,6 +99,16 @@
 				7629CD11287BA3E50038B2C1 /* Main.storyboard */,
 			);
 			path = "sesac-week2";
+			sourceTree = "<group>";
+		};
+		76A0CD0C2880E81D0065E145 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				76A0CD0D2880E8370065E145 /* TransitonStoryboard.storyboard */,
+				76A0CD0F2880EFC50065E145 /* TransitionFirstViewController.swift */,
+				76A0CD112880FE030065E145 /* TransitionSecondViewController.swift */,
+			);
+			path = Transition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76A0CD0E2880E8370065E145 /* TransitonStoryboard.storyboard in Resources */,
 				7629CD18287BA3E70038B2C1 /* LaunchScreen.storyboard in Resources */,
 				7629CD15287BA3E70038B2C1 /* Assets.xcassets in Resources */,
 				7629CD13287BA3E50038B2C1 /* Main.storyboard in Resources */,
@@ -183,6 +201,8 @@
 				76C1962A287D16AD009C52B0 /* sesac0712ViewController.swift in Sources */,
 				7629CD10287BA3E50038B2C1 /* ViewController.swift in Sources */,
 				76726C70287F8E8D005D88EB /* AnniversaryViewController.swift in Sources */,
+				76A0CD102880EFC50065E145 /* TransitionFirstViewController.swift in Sources */,
+				76A0CD122880FE030065E145 /* TransitionSecondViewController.swift in Sources */,
 				7629CD0C287BA3E50038B2C1 /* AppDelegate.swift in Sources */,
 				7629CD0E287BA3E50038B2C1 /* SceneDelegate.swift in Sources */,
 			);
@@ -336,7 +356,7 @@
 				INFOPLIST_FILE = "sesac-week2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = TransitonStoryboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -365,7 +385,7 @@
 				INFOPLIST_FILE = "sesac-week2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = TransitonStoryboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
